@@ -1,18 +1,20 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Welcome from "./component/Welcome";
+import CreateGame from "./component/Create"
+import JoinGame from "./component/Join"
+import Wait from "./component/Wait";
 
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-       
-        <p>
-      NOTHING TO SEE HERE YET
-        </p>
-        
-      </header>
-    </div>
+    <div>
+   <Welcome />
+   <CreateGame />
+   <JoinGame />
+<Wait />
+</div>
   );
 }
 
