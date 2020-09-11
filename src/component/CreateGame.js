@@ -1,14 +1,19 @@
 import React from "react";
+import { Card, Button } from "react-bootstrap";
 
-function CreateGame() {
-
+class CreateGame extends React.Component {
+  render(){
   return (
     <div className="container">
+
+      <h1 className = "text-center">Create Game</h1>
+
+      <p>So you're today's game master, huh? Well, you're going to have a lot of responsibility to make sure the game runs smoothly, but I'm here to help you.</p>
+
+      <p>First of all, you're going to need to help me set up the game by telling me how many mafia members you want, plus any special roles. Don't worry about the number of players - I can take care of that.</p>
+      <Card>
+        <Card.Body>
       <form>
-        <div className="form-group">
-          <label for="playerNum">Number of Players</label>
-          <input type="number" className="form-control playerNum" placeholder="" />
-        </div>
         <div className="form-group">
           <label for="mafiaNum">Number of Mafia</label>
           <select className="form-control" id="mafiaNum">
@@ -49,10 +54,14 @@ function CreateGame() {
           </div>
 
           <br />
-          <button id="goMafia" className="btn btn-success">Go!</button>
+          <Button onClick={() =>{this.props.history.push("/Roomcode")}} className="btn btn-success">Go!</Button>
+       
     </form>
+    </Card.Body>
+      </Card>
                   </div>
       )
+}
 }
 
 export default CreateGame
