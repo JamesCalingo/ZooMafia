@@ -7,7 +7,7 @@ class Welcome extends React.Component {
     return (
       <div className='text-center'>
         <Jumbotron className='display-3'>Welcome to Zoom Mafia!</Jumbotron>
-
+      
         <p className='mb-3'>Please select one of the following options. If you are the person creating the game, go to "Create game". If you are joining someone else's game, use "Join game".</p>
 
         <Button className='btn btn-lg btn-success mr-3' onClick={() => { this.props.history.push('/CreateGame') }}>Create game</Button>

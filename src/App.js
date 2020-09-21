@@ -24,18 +24,20 @@ function App () {
 
 
   return (
-    <p>
+   <div>
+       <p>
       It's <time dateTime={response}>{response}</time>
     </p>
-    // <Router>
-    //   <Switch>
-    //     <Route exact path='/' component={Welcome} />
-    //     <Route exact path='/CreateGame' component={CreateGame} />
-    //     <Route exact path='/Roomcode' component={Roomcode} />
-    //     <Route exact path='/JoinGame' component={JoinGame} />
-    //     <Route exact path='/Wait' component={Wait} />
-    //   </Switch>
-    // </Router>
+    <Router>
+      <Switch>
+        <Route exact path='/' component={Welcome} />
+        <Route exact path='/CreateGame' component={CreateGame} />
+        <Route exact path='/Roomcode' component={Roomcode} />
+        <Route exact path='/JoinGame' component={JoinGame} />
+        <Route exact path='/Wait' component={Wait} />
+      </Switch>
+    </Router>
+    </div>
   )
 }
 
