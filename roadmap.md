@@ -1,8 +1,6 @@
 THE NEW IDEA FOR THE WEB GAME
 
-Welcome to the manor!
-
-We’ve been expecting you. We hope you enjoy this dinner party.
+Welcome to the manor! We’ve been expecting you. We hope you enjoy our little party.
 
 Unfortunately, it seems as if someone has shown up uninvited…someone with murderous intentions.
 
@@ -12,8 +10,8 @@ A few other interesting characters have also shown up: A medium who can see dead
 
 Feel free to explore the manor, but to ensure everyone’s safety, we are issuing the following ground rules:
 
--All guests must reconvene in the main room after two minutes of exploration.
--Guests must remain in the main room for three minutes to discuss who they believe the killer is.
+- All guests must reconvene in the main room after two minutes of exploration.
+- Guests must remain in the main room for three minutes to discuss who they believe the killer is.
 
 Things to consider:
 
@@ -34,26 +32,24 @@ Medium: You can sense when you’re in the same room as a ghost, and can convers
 
 There are secret passageways, but like Among Us, they’re only accessible to the murderers - initially. Use of these is public knowledge.
 
-MY GOAL:My goal for this app is, in short, mafia with more. I’ve realized that pure mafia isn’t actually that great as a standalone app
-
-Due to the limitations of not having a video game style interface, this won’t just be an Among Us knockoff. It will kinda feel like it, but I will eventually figure out how to 
-(I mean, having extra roles 
-
-Leveraging at least voice chat would be nice, but I’ll start with text. Until I can integrate voice, Discord will be the way to go.
+DIALOGUE:
 
 EACH ROOM:
 
-You are in {room}. {players} are with you.
+You are in {room} with {players}
 
->Converse
->Move
+- Converse (brings up chat window)
+- Move (brings up list of rooms to move to)
+- Kill (if killer, brings up list of names to kill)
+- Investigate (if Detective, brings up list of names to investigate)
 
 if(medium){
 You are in {room}. {players} are with you, and you can feel the spirit of {dead}.
 
->converse
->Move
->}
+- Converse
+- Move
+- Seance with the dead
+
 
 onPlayerEnter{
 {player} has entered the room.}
@@ -63,9 +59,16 @@ onPlayerLeave{
 
 KILL:
 
-
+For the killer:
+You approach {victim} and strike them with a killing blow!
 
 For the victim:
 {killer} approaches you, brandishes their weapon, and kills you!
 
 You are now dead. You are still free to explore the mansion, but you may not converse with the living.
+
+For any witnesses:
+{killer} just killed {victim}!
+
+DETECTIVE:
+
