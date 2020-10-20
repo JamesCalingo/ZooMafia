@@ -1,0 +1,29 @@
+{
+  "name": "zoomafia",
+  "version": "1.0.0",
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "roomGenerator.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "jest": "^26.6.0",
+    "mongoose": "^5.10.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesCalingo/ZooMafia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesCalingo/ZooMafia/issues"
+  },
+  "homepage": "https://github.com/JamesCalingo/ZooMafia#readme"
+}
