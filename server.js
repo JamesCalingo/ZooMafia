@@ -1,9 +1,8 @@
 const express = require('express');
-const express = require('express')
 const http = require('http')
 const socketIo = require('socket.io')
 const port = process.env.PORT || 3001
-const index = require('./src/routes/routes')
+const index = require('./routes/routes')
 const app = express()
 app.use(index)
 const server = http.createServer(app)
