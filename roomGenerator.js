@@ -1,7 +1,8 @@
-const letterArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-
+// This array has letters taken out of it so room codes don't accidentally contain swears
 const limitedArray = ["a", "b", "d", "e", "f", "g", "j", "k", "l", "m", "o", "p", "q", "r", "v", "w", "x", "y", "z"]
+
 generateRoomcode = () => {
+  const letterArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
   let roomcode = ""
 getRandomLetter = arr => {
   let randIndex = Math.floor(Math.random()*arr.length)
@@ -15,4 +16,3 @@ for(let i = 0; i < 5; i++){
 
 return roomcode
 }
-console.log(Math.random().toString(36))

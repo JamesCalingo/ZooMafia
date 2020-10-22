@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors')
 const http = require('http')
 const socketIo = require('socket.io')
 const port = process.env.PORT || 3001
@@ -7,8 +8,6 @@ const app = express()
 app.use(index)
 const server = http.createServer(app)
 const io = socketIo(server)
-
-let interval
 
 io.on('connection', (socket) => {
   console.log('someone arrived!')
@@ -27,4 +26,4 @@ const getApiAndEmit = socket => {
   socket.emit('FromAPI', response)
 }
 
-server.listen(port, () => console.log(`listening on port ${port}`))
+app.listen(port, () => console.log(`listening on port ${port}`))
