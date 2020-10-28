@@ -1,5 +1,5 @@
 // This array has letters taken out of it so room codes don't accidentally contain swears
-const limitedArray = ["a", "b", "d", "e", "f", "g", "j", "k", "l", "m", "o", "p", "q", "r", "v", "w", "x", "y", "z"]
+const badwordsArray = require('badwords/array')
 
 getRandomLetter = arr => {
   let randIndex = Math.floor(Math.random()*arr.length)
