@@ -7,15 +7,15 @@ getRandomLetter = arr => {
   return randLetter
 }
 
-generateRoomcode = () => {
+generateRoomcode = (length) => {
   const letterArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
   let roomcode = ""
-  let roomcodeLength = 5
+  
 
-for(let i = 0; i < roomcodeLength; i++){
+for(let i = 0; i < length; i++){
   roomcode += getRandomLetter(letterArray).toUpperCase()
 }
-// To avoid bad language in the roomcode, the third index will be re-selected from a more limited array
+
 
 return roomcode
 }
